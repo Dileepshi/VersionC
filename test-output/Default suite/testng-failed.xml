@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.ivy.testcases.TC_LocationAdd_Datadriven">
+        <methods>
+          <include name="addMultipleLocations" invocation-numbers="1 2"/>
+          <include name="loginsetup"/>
+          <include name="setup"/>
+          <include name="disconnect"/>
+        </methods>
+      </class> <!-- com.ivy.testcases.TC_LocationAdd_Datadriven -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
