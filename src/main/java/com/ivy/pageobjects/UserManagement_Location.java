@@ -11,17 +11,14 @@ public class UserManagement_Location extends Baseclass {
 
 	WebDriver driver;
 
-	/*
-	 * @FindBy(xpath = "//*[text()='Masters']") WebElement Masterslink;
-	 * 
-	 * @FindBy(xpath = "//*[text()='User Management']") WebElement
-	 * UserManagementLink;
-	 */
 	@FindBy(xpath = ".//span[text()='Location']")
 	WebElement locationComponentlink;
 
 	@FindBy(xpath = "//*[@id='DynamicLocationLevel']/div[1]")
 	WebElement salesOrgLink;
+
+	@FindBy(xpath = "//*[@id='DynamicLocationLevel']/div[2]")
+	WebElement nationalLink;
 
 	@FindBy(xpath = ".//*[@id='btnAdd']")
 	WebElement addButton;
@@ -45,16 +42,6 @@ public class UserManagement_Location extends Baseclass {
 		PageFactory.initElements(idriver, this);
 	}
 
-	/*
-	 * public void verifyMastersLink() {
-	 * 
-	 * Masterslink.click(); }
-	 * 
-	 * public void verifyUserManagementLink() {
-	 * 
-	 * UserManagementLink.click(); }
-	 */
-
 	public void locationcomponentLink() {
 
 		locationComponentlink.click();
@@ -63,6 +50,11 @@ public class UserManagement_Location extends Baseclass {
 	public void verfifySalesorglink() {
 
 		salesOrgLink.click();
+	}
+
+	public void verifyNationallink() {
+
+		nationalLink.click();
 	}
 
 	public void verfiyAddbutton() {

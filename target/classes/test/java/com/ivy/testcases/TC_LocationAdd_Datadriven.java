@@ -1,6 +1,5 @@
 package com.ivy.testcases;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
@@ -16,26 +15,14 @@ public class TC_LocationAdd_Datadriven extends Baseclass {
 
 	LoginPage lp;
 	UserManagement_Location ul;
-	
-	public TC_LocationAdd_Datadriven(){
-		
-		super();
-	}
 
 	@BeforeMethod
 	public void loginsetup() throws Exception {
-		if(driver!= null)
-		{
-			
-			driver.get(baseUrl);
-
-		}
-		else
+		if (driver == null) 
 		{
 			setup();
-			driver.get(baseUrl);
-
 		}
+		driver.get(baseUrl);
 		LoginPage lp = new LoginPage(driver);
 		lp.setUsername(userName);
 		lp.setPassword(password);
@@ -57,27 +44,18 @@ public class TC_LocationAdd_Datadriven extends Baseclass {
 		ul.verfiyAddbutton();
 	}
 
-	/*@DataProvider(name = "locationdata")
-	public Object[][] addMultipleLocationsprovider() throws Exception {
-
-		ExcelData locData = new ExcelData();
-		Object[][] data = locData.getdata();
-
-		return data;
-	}*/
-
-	@Test(dataProvider = "locationdata" ,dataProviderClass=ExcelData.class)
+	@Test(dataProvider = "locationdata", dataProviderClass = ExcelData.class)
 	public void addMultipleLocations(String code, String name) throws Exception {
 		ul.addCode(code);
 		ul.addName(name);
 		ul.verifyLocationSaveButton();
-		//ul.clickAddedAlert();
-
+		// ul.clickAddedAlert();
 	}
+
 	@AfterMethod
-	public void disconnect()  {
-	  driver.close();
-	  driver = null;
+	public void disconnect() {
+		driver.close();
+		driver = null;
 
 	}
 }

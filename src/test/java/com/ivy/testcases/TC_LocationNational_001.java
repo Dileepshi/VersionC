@@ -2,26 +2,22 @@ package com.ivy.testcases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.AfterMethod;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ivy.baseclass.Baseclass;
 import com.ivy.pageobjects.LoginPage;
 import com.ivy.pageobjects.UserManagement_Location;
-import com.ivy.utils.ExcelData;
 
-public class TC_LocationAdd_Datadriven extends Baseclass {
+public class TC_LocationNational_001 extends Baseclass {
 
 	LoginPage lp;
 	UserManagement_Location ul;
 
 	@BeforeMethod
-	public void loginsetup() throws Exception {
-		if (driver == null) 
-		{
-			setup();
-		}
+	public void loginSetup() throws Exception {
+
 		driver.get(baseUrl);
 		LoginPage lp = new LoginPage(driver);
 		lp.setUsername(userName);
@@ -31,6 +27,7 @@ public class TC_LocationAdd_Datadriven extends Baseclass {
 
 		WebElement element1 = driver.findElement(By.xpath("//*[text()='Masters']"));
 		WebElement element2 = driver.findElement(By.xpath("//*[text()='User Management']"));
+
 		moveover(element1, element2);
 		Thread.sleep(1000);
 		ul = new UserManagement_Location(driver);
@@ -40,22 +37,25 @@ public class TC_LocationAdd_Datadriven extends Baseclass {
 		driver.switchTo().frame(frameid1);
 		ul.locationcomponentLink();
 		driver.switchTo().frame("iContent");
-		ul.verfifySalesorglink();
+	}
+
+	@Test
+	public void verifyTerritory() {
+
+		ul.verifyNationallink();
 		ul.verfiyAddbutton();
-	}
-
-	@Test(dataProvider = "locationdata", dataProviderClass = ExcelData.class)
-	public void addMultipleLocations(String code, String name) throws Exception {
-		ul.addCode(code);
-		ul.addName(name);
+		selectDropDownValues(By.id("PLF_Nat"), driver, "a");
+		ul.addCode("aaa");
+		ul.addName("bb");
 		ul.verifyLocationSaveButton();
-		// ul.clickAddedAlert();
+		driver.switchTo().defaultContent();
+		String alertMessage = driver.findElement(By.id("alertContent")).getText();
+		if (alertMessage.contains("successfully!")) {
+
+			Assert.assertTrue(true);
+		} else
+			Assert.assertTrue(false);
+
 	}
 
-	@AfterMethod
-	public void disconnect() {
-		driver.close();
-		driver = null;
-
-	}
 }

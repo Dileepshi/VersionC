@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +17,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 
@@ -48,7 +50,11 @@ public class Baseclass {
 		}
 		if (browserName.equalsIgnoreCase("chrome")) {
 
+			
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\selenium-java-3.141.59\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
+			Logs.info("Browser Invoked");
 
 		}
 		if (browserName.equalsIgnoreCase("IE")) {
@@ -106,6 +112,19 @@ public class Baseclass {
 		}
 		driver.switchTo().defaultContent();
 		return i;
+	}
+
+	public static void selectDropDownValues(By by, WebDriver driver, String Value) {
+
+		Select sel = new Select(driver.findElement(by));
+		sel.selectByVisibleText(Value);
+	}
+
+	public static void calenderSelectJS(WebDriver driver, String dateVal,WebElement ele) {
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].setAttribute('value','" + dateVal + "');",ele);
+
 	}
 
 	// @AfterClass
