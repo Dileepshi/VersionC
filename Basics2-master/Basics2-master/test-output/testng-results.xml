@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15033" started-at="2019-09-18T08:26:06Z" finished-at="2019-09-18T08:26:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15033" started-at="2019-09-18T08:26:06Z" finished-at="2019-09-18T08:26:21Z">
+      <class name="Naveen.javaExecutorCommands">
+        <test-method status="PASS" signature="javaCommands()[pri:0, instance:Naveen.javaExecutorCommands@53b32d7]" name="javaCommands" duration-ms="15000" started-at="2019-09-18T13:56:06Z" finished-at="2019-09-18T13:56:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- javaCommands -->
+      </class> <!-- Naveen.javaExecutorCommands -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

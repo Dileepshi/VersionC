@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="resources.Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="ValidateTitleCase(failed)">
+    <classes>
+      <class name="Ivyproject.HomePageTest">
+        <methods>
+          <include name="closedriver"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- Ivyproject.HomePageTest -->
+      <class name="Ivyproject.validateBarTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="closedriver"/>
+        </methods>
+      </class> <!-- Ivyproject.validateBarTest -->
+      <class name="Ivyproject.ValidateTitleTest">
+        <methods>
+          <include name="titlename"/>
+          <include name="initialize"/>
+          <include name="closedriver"/>
+        </methods>
+      </class> <!-- Ivyproject.ValidateTitleTest -->
+    </classes>
+  </test> <!-- ValidateTitleCase(failed) -->
+</suite> <!-- Failed suite [Suite] -->

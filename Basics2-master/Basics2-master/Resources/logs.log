@@ -1,0 +1,8 @@
+13:38:50.086 [main] DEBUG Log.Basics - im debugging
+13:38:50.086 [main] DEBUG Log.Basics - im debugging
+13:38:50.094 [main] ERROR Log.Basics - error is there
+13:38:50.094 [main] ERROR Log.Basics - error is there
+13:38:50.094 [main] FATAL Log.Basics - i fatal
+13:38:50.094 [main] FATAL Log.Basics - i fatal
+13:38:50.100 [main] INFO  Log.Basics - this is completed
+13:38:50.100 [main] INFO  Log.Basics - this is completed

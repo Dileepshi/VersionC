@@ -1,0 +1,8 @@
+com\ivy\pageobjects\UserManagement_Location.class
+com\ivy\pageobjects\LoginPage.class
+com\ivy\pageobjects\DistributorMaster.class
+com\ivy\baseclass\Baseclass.class
+com\ivy\utils\Readconfig.class
+com\ivy\utils\ExcelData2.class
+com\ivy\utils\ExcelData.class
+com\ivy\pageobjects\UserManagement_UserMapping.class

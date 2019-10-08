@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="99413" started-at="2019-07-22T09:20:58Z" finished-at="2019-07-22T09:22:37Z">
+    <groups>
+    </groups>
+    <test name="AllTests" duration-ms="99413" started-at="2019-07-22T09:20:58Z" finished-at="2019-07-22T09:22:37Z">
+      <class name="com.crm.tests.TC_loginpage_001">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.tests.TC_loginpage_001@23f7d05d]" name="setup" is-config="true" duration-ms="24334" started-at="2019-07-22T14:50:58Z" finished-at="2019-07-22T14:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="invokebrowser()[pri:0, instance:com.crm.tests.TC_loginpage_001@23f7d05d]" name="invokebrowser" is-config="true" duration-ms="13618" started-at="2019-07-22T14:51:22Z" finished-at="2019-07-22T14:51:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokebrowser -->
+        <test-method status="PASS" signature="loginTest()[pri:1, instance:com.crm.tests.TC_loginpage_001@23f7d05d]" name="loginTest" duration-ms="14707" started-at="2019-07-22T14:51:36Z" finished-at="2019-07-22T14:51:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.tests.TC_loginpage_001@23f7d05d]" name="teardown" is-config="true" duration-ms="8249" started-at="2019-07-22T14:51:51Z" finished-at="2019-07-22T14:51:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.crm.tests.TC_loginpage_001 -->
+      <class name="com.crm.tests.TC_Homepage_001">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.tests.TC_Homepage_001@1e730495]" name="setup" is-config="true" duration-ms="6923" started-at="2019-07-22T14:51:59Z" finished-at="2019-07-22T14:52:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.crm.tests.TC_Homepage_001@1e730495]" name="Setup" is-config="true" duration-ms="28738" started-at="2019-07-22T14:52:06Z" finished-at="2019-07-22T14:52:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="VerifyHomePageTitle()[pri:1, instance:com.crm.tests.TC_Homepage_001@1e730495]" name="VerifyHomePageTitle" duration-ms="4" started-at="2019-07-22T14:52:35Z" finished-at="2019-07-22T14:52:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePageTitle -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.crm.tests.TC_Homepage_001@1e730495]" name="quit" is-config="true" duration-ms="2817" started-at="2019-07-22T14:52:35Z" finished-at="2019-07-22T14:52:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.tests.TC_Homepage_001@1e730495]" name="teardown" is-config="true" duration-ms="0" started-at="2019-07-22T14:52:37Z" finished-at="2019-07-22T14:52:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.crm.tests.TC_Homepage_001 -->
+    </test> <!-- AllTests -->
+  </suite> <!-- Suite -->
+</testng-results>

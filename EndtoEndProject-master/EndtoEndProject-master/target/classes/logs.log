@@ -1,0 +1,3 @@
+13:28:55.475 [main] INFO  resources.BaseClass - Browser Invoked
+13:28:59.487 [main] INFO  resources.BaseClass - Navigated to Login page
+13:28:59.602 [main] INFO  resources.BaseClass - Text Message has been validated

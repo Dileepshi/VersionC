@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Automation/SeleniumJars/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="D:/Automation/SeleniumJars/common-lang3.jar/common-lang3.jar"/>
+	<classpathentry kind="lib" path="D:/Automation/SeleniumJars/selenium-htmlunit-driver-2.9.0.jar/selenium-htmlunit-driver-2.9.0.jar"/>
+	<classpathentry kind="lib" path="D:/Automation/SeleniumJars/apache-logging-log4j.jar/apache-logging-log4j.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

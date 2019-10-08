@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="basePath">./Resources</Property>  <!-- used for path -->
+	</Properties>
+	<Appenders>   <!-- rolling file is used for the log to print in File -->
+		<RollingFile name="File" fileName="${basePath}/logs.log"
+			filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="500" /> <!-- if the file becomes more than 500 KB, then a file is created by system 
+				as specified in file pattern format -->
+		</RollingFile>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{HH:mm:ss.SS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Logger name="Log.Basics" level="trace" additivity="false"> <!--here this class will run only error logs but for others it runs all since 
+				it is trace at root -->
+			<!-- additivity="false" will run at logger level but skip at root level(only 
+				the package and class mentioned in logger) -->
+			<!-- if level is error it will run error and fatal logs. If its trace 
+				level it wil run all logs(error,debug,info,fatal) -->
+			<AppenderRef ref="File" /> <!--  this will tell where to run - console or file-->
+		</Logger>
+		<Root level="trace">           <!--  this will run only if true is specified in additivity-->
+			<AppenderRef ref="File" /> <!--  this will tell where to run - console or file-->
+		</Root>
+	</Loggers>
+</Configuration>
