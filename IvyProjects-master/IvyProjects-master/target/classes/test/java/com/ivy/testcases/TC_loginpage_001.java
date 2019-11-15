@@ -31,7 +31,6 @@ public class TC_loginpage_001 extends Baseclass {
 	@AfterMethod
 	public void end() {
 
-		driver.quit();;
-
+		driver.quit();
 	}
 }

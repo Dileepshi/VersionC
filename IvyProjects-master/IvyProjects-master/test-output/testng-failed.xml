@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.ivy.utils.Listeners"/>
+  </listeners>
+  <test name="Test1(failed)" parallel="tests">
     <classes>
-      <class name="com.ivy.testcases.SQL">
+      <class name="com.ivy.testcases.TC_Productdistribution_2">
         <methods>
-          <include name="sql"/>
+          <include name="loginforLinks"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.ivy.testcases.SQL -->
+      </class> <!-- com.ivy.testcases.TC_Productdistribution_2 -->
+      <class name="com.ivy.testcases.TC_LocationAdd_001">
+        <methods>
+          <include name="loginsetup"/>
+          <include name="setup"/>
+          <include name="verifyLocationAdd"/>
+        </methods>
+      </class> <!-- com.ivy.testcases.TC_LocationAdd_001 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test1(failed) -->
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.ivy.testcases.TC_Productdistribution_2">
+        <methods>
+          <include name="mapProductstoDistributor"/>
+          <include name="ClickProductDistributionLink"/>
+          <include name="loginforLinks"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ivy.testcases.TC_Productdistribution_2 -->
+      <class name="com.ivy.testcases.TC_LocationAdd_001">
+        <methods>
+          <include name="loginsetup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ivy.testcases.TC_LocationAdd_001 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

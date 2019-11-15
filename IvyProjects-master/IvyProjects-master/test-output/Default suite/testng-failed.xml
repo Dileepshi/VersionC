@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.ivy.testcases.SQL">
+      <class name="com.ivy.testcases.GetallLinks">
         <methods>
-          <include name="sql"/>
+          <include name="setup"/>
+          <include name="loginforLinks"/>
+          <include name="getLinks"/>
         </methods>
-      </class> <!-- com.ivy.testcases.SQL -->
+      </class> <!-- com.ivy.testcases.GetallLinks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

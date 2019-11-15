@@ -1,54 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46" started-at="2019-10-08T07:36:56Z" finished-at="2019-10-08T07:36:56Z">
+  <suite name="Suite" duration-ms="59846" started-at="2019-11-15T07:47:09Z" finished-at="2019-11-15T07:48:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46" started-at="2019-10-08T07:36:56Z" finished-at="2019-10-08T07:36:56Z">
-      <class name="com.ivy.testcases.SQL">
-        <test-method status="FAIL" signature="sql()[pri:0, instance:com.ivy.testcases.SQL@cb5822]" name="sql" duration-ms="17" started-at="2019-10-08T13:06:56Z" finished-at="2019-10-08T13:06:56Z">
-          <exception class="java.sql.SQLException">
-            <message>
-              <![CDATA[No suitable driver found for jdbc:sqlserver://IVYQADBAWSIN01:1433/IvyCpg_DiageoGhana]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.sql.SQLException: No suitable driver found for jdbc:sqlserver://IVYQADBAWSIN01:1433/IvyCpg_DiageoGhana
-	at java.sql.DriverManager.getConnection(Unknown Source)
-	at java.sql.DriverManager.getConnection(Unknown Source)
-	at com.ivy.testcases.SQL.sql(SQL.java:20)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.sql.SQLException -->
+    <test name="Test" duration-ms="37539" started-at="2019-11-15T07:47:09Z" finished-at="2019-11-15T07:47:47Z">
+      <class name="com.ivy.testcases.TC_Productdistribution_2">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ivy.testcases.TC_Productdistribution_2@6069db50]" name="setup" is-config="true" duration-ms="5067" started-at="2019-11-15T13:17:09Z" finished-at="2019-11-15T13:17:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sql -->
-      </class> <!-- com.ivy.testcases.SQL -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginforLinks()[pri:0, instance:com.ivy.testcases.TC_Productdistribution_2@6069db50]" name="loginforLinks" is-config="true" duration-ms="27636" started-at="2019-11-15T13:17:14Z" finished-at="2019-11-15T13:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginforLinks -->
+        <test-method status="PASS" signature="ClickProductDistributionLink()[pri:1, instance:com.ivy.testcases.TC_Productdistribution_2@6069db50]" name="ClickProductDistributionLink" duration-ms="1716" started-at="2019-11-15T13:17:42Z" finished-at="2019-11-15T13:17:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickProductDistributionLink -->
+        <test-method status="PASS" signature="mapProductstoDistributor()[pri:2, instance:com.ivy.testcases.TC_Productdistribution_2@6069db50]" name="mapProductstoDistributor" duration-ms="3105" started-at="2019-11-15T13:17:43Z" finished-at="2019-11-15T13:17:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mapProductstoDistributor -->
+      </class> <!-- com.ivy.testcases.TC_Productdistribution_2 -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="59846" started-at="2019-11-15T07:47:09Z" finished-at="2019-11-15T07:48:09Z">
+      <class name="com.ivy.testcases.TC_LocationAdd_001">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ivy.testcases.TC_LocationAdd_001@2a3b5b47]" name="setup" is-config="true" duration-ms="5068" started-at="2019-11-15T13:17:09Z" finished-at="2019-11-15T13:17:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginsetup()[pri:0, instance:com.ivy.testcases.TC_LocationAdd_001@2a3b5b47]" name="loginsetup" is-config="true" duration-ms="28096" started-at="2019-11-15T13:17:14Z" finished-at="2019-11-15T13:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginsetup -->
+        <test-method status="PASS" signature="verifyLocationAdd()[pri:0, instance:com.ivy.testcases.TC_LocationAdd_001@2a3b5b47]" name="verifyLocationAdd" duration-ms="26672" started-at="2019-11-15T13:17:42Z" finished-at="2019-11-15T13:18:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLocationAdd -->
+      </class> <!-- com.ivy.testcases.TC_LocationAdd_001 -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
 </testng-results>

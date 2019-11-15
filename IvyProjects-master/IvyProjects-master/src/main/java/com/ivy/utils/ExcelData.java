@@ -15,7 +15,7 @@ public class ExcelData extends Baseclass {
 	XSSFWorkbook wb;
 	XSSFSheet sh;
 
-	@DataProvider(name="locationdata")
+	@DataProvider(name="extractData")
 	public String[][] getdata() throws IOException {
 
 		try {
@@ -24,10 +24,14 @@ public class ExcelData extends Baseclass {
 			e.printStackTrace();
 		}
 		wb = new XSSFWorkbook(fil);
-		sh = wb.getSheet(locationSheetname);
+		sh = wb.getSheet("Sheet1");
 
 		String[][] data = new String[sh.getLastRowNum()][sh.getRow(0).getLastCellNum()];
-
+		
+		/*
+		 * int rows = sh.getLastRowNum(); 
+		 * int columns =sh.getRow(0).getLastCellNum();
+		 */
 		for (int i = 0; i < sh.getLastRowNum(); i++) {
 			for (int j = 0; j < sh.getRow(i).getLastCellNum(); j++) {
 

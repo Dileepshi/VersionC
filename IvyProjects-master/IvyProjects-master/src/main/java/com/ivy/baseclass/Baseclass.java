@@ -31,7 +31,7 @@ public class Baseclass {
 	public String baseUrl = readconfig.getBaseurl();
 	public String userName = readconfig.getUsername();
 	public String password = readconfig.getPassword();
-	//public String browserName = readconfig.getBrowsername();
+	public String browserName = readconfig.getBrowsername();
 	public String locationdata_path = readconfig.getlocationDataPath();
 	public String locationSheetname = readconfig.getlocationDatasheetname();
 
@@ -39,7 +39,7 @@ public class Baseclass {
 	
 	// to send browsername from cmd
 	
-	String browserName=System.getProperty("browser");
+	//String browserName=System.getProperty("browser");
 
 	@BeforeClass
 	public WebDriver setup() {
@@ -66,10 +66,10 @@ public class Baseclass {
 			driver = new InternetExplorerDriver();
 
 		}
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(25, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
 		return driver;
 	}
 
@@ -93,6 +93,16 @@ public class Baseclass {
 		act.moveToElement(element2).click().build().perform();
 
 	}
+	
+	public void multiplemoveover(WebElement element1, WebElement element2,WebElement element3) throws Exception {
+
+		Actions act = new Actions(driver);
+		act.moveToElement(element1).perform();
+		Thread.sleep(1000);
+		act.moveToElement(element2).moveToElement(element3).click().build().perform();
+
+	}
+	
 
 	public void movecursor() throws Exception {
 
