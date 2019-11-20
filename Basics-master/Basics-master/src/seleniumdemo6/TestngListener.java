@@ -4,6 +4,9 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 //ITestListener is an interface which implements TESTNG listeners
 public class TestngListener implements ITestListener {
 
@@ -11,13 +14,20 @@ public class TestngListener implements ITestListener {
 
 	}
 
-	@Override
+	
 	public void onTestStart(ITestResult result) {
 		System.out.println("test Case is starting and the name is " + result.getName());
+		ExtentHtmlReporter html = new ExtentHtmlReporter(System.getProperty("user.dir")+"/Reports/myreport.html");
+		html.config().setDocumentTitle("Automate Rest Assured");
+		html.config().setReportName("Functional Testing");
+		
+		ExtentReports extent = new ExtentReports();
+		extent.attachReporter(html);
+		extent.setSystemInfo("Env", "QA");
 
 	}
 
-	@Override
+	
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("test Case is passed and the name is  " + result.getName());
 	}
@@ -40,7 +50,6 @@ public class TestngListener implements ITestListener {
 
 	}
 
-	@Override
 	public void onStart(ITestContext context) {
 
 	}

@@ -8,6 +8,8 @@ public class randomstrings {
 		
 		randomstrings n = new randomstrings();
 		String St=n.randomstring();
+		int num=Integer.parseInt(n.randomnumber());
+		System.out.println(num);
 		System.out.println(St);
 	}
 	
@@ -15,6 +17,12 @@ public class randomstrings {
 	public String randomstring() {
 		String randomString = RandomStringUtils.randomAlphabetic(5);
 		return randomString;
+
+	}
+	
+	public String randomnumber() {
+		String randomNumber = RandomStringUtils.randomNumeric(1);
+		return randomNumber;
 
 	}
 	

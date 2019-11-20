@@ -35,6 +35,14 @@ public class DifferentXpaths {
 		// to find an object which is located in a parent and its preceding sibling and its childs child
 		////input[@class='test2']//parent::td[@class='run']//preceding-sibling::div[@id='check']//input[@id='click']
 		
+	//  descendant - this will give u the childs of an element
+	//  following - by this we can find the any selected following elements.Even it can be the child of any other element
+	// EX: //*[@id='APH_Primary_Sales_UOM']//following::option -- this will keep getting all the option in the html
+
+	// preceding - this is quiet opposite to following -
+	// following-sibling - this will get the following tag name of same tag name
+
+		
 		
 		
 		

@@ -31,9 +31,8 @@ public class MouseOver {
 		// incase if we have move to 3 elements via mouse over, it can be performed
 		// act.moveToElement(ele).moveToElement(ele2)..moveToElement(ele3).build().perform();
 		List<WebElement> lists = driver.findElements(By.xpath(".//div[@class='dropdown-content']//a"));
-		// 1. Below is to type characters in Caps
-		 //act.moveToElement(someelement).click().keyDown(Keys.SHIFT).sendKeys("Hello").build().perform();
-		
+		// 1. Below is to type characters in Caps ,  The KeyDown event is triggered when the user presses a Key.
+		//act.moveToElement(someelement).click().keyDown(Keys.SHIFT).sendKeys("Hello").build().perform();
 		// 2. Below is to Select the entire text
 		// act.moveToElement(someelement).click().keyDown(Keys.SHIFT).sendKeys("Hello").doubleClick().build().perform();
 		// 3. Below is to right click on a specific element

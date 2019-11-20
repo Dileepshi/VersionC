@@ -18,8 +18,8 @@ public class FrameDemo {
 
 	@Test
 	public void Demo() throws IOException, InterruptedException {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\Automation\\Drivers\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/test/guru99home/");

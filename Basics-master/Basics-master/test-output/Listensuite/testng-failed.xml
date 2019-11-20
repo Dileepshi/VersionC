@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Listensuite]">
   <listeners>
     <listener class-name="seleniumdemo6.TestngListener"/>
   </listeners>
-  <test name="Listencase(failed)">
+  <test thread-count="5" name="Listencase(failed)">
     <classes>
       <class name="seleniumdemo6.ListenerCase">
         <methods>
+          <include name="Case"/>
           <include name="Case1"/>
         </methods>
       </class> <!-- seleniumdemo6.ListenerCase -->

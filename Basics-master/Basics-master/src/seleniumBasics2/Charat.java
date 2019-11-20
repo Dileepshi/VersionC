@@ -6,6 +6,7 @@ public class Charat {
 
 		String name = "my name is Dileep";
 		System.out.println(name.charAt(0));
+	
 	}
 
 }

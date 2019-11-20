@@ -1,16 +1,9 @@
 package Basics;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
 public class Variables {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//System.setProperty("webdriver.gecko.driver", "C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-		//WebDriver Driver = new FirefoxDriver();
-		
-		//Driver.get("https://www.google.com/");
+
 		int a=1;
 		int b=2;
 		int c= a+b;

@@ -19,7 +19,7 @@ public class verifytitle {
 		//or
 		//Assert.assertTrue(pagetitle.contains("Selenium WebDriver tutorial"));
 		String source = driver.getPageSource();
-		org.testng.Assert.assertTrue(source.contains("Selenium WebDriver tutorial"));
+		Assert.assertTrue(source.contains("Selenium WebDriver tutorial"));
 		driver.quit();	
 	}
 @Test

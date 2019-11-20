@@ -3,16 +3,15 @@ package seleniumdemo4;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Multiplewindow4 {
 
 	@Test
 	public void TestPopUp() throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\Automation\\Drivers\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
 		driver.get("https://www.naukri.com/");

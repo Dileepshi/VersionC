@@ -20,6 +20,7 @@ public class Brokenlinks {
 		driver.get("http://www.google.co.in/");
 
 		List<WebElement> links = driver.findElements(By.tagName("a"));
+		links.addAll(driver.findElements(By.tagName("img")));
 
 		System.out.println("Total links are " + links.size());
 

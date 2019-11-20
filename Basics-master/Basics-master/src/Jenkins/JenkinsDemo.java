@@ -11,8 +11,8 @@ public class JenkinsDemo {
 
 	@Test
 	public void Demo() throws IOException, InterruptedException {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver" ,
+				"D:\\Automation\\Drivers\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("file:///D:/Automation/SelenuimJars/fileupload.html");
@@ -20,6 +20,7 @@ public class JenkinsDemo {
 		driver.findElement(By.xpath(".//*[@id='1']")).click();
 		Thread.sleep(1000);
 		Runtime.getRuntime().exec("D:\\Automation\\SelenuimJars\\AutoIT\\fileupload.exe");
+		
 
 	}
 

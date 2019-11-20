@@ -16,8 +16,8 @@ public class Cssselector {
 		// input#u_0_j
 		//input.inputtext 
 		//input[class=inputtext]
-		//.inputtext  -- class name
-		//#email  -- id 
+		//.inputtext         -- class name
+		//#email             -- id 
 		//input[id*='em']  --  this * acts as contains 
 		//input[id↑='em']  --- this ↑ acts as start-with 
 		//input[id$='login']  --  this $ is for ends - with
@@ -27,6 +27,8 @@ public class Cssselector {
 		
 		//parent child
 		//  [class='datepicker-days'] [class='datepicker-switch']
+		
+		// for tr/td[2] - in css selector tr td:nth-child(2)
 		
 		
 		

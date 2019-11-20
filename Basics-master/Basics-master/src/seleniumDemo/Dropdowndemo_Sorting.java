@@ -15,8 +15,8 @@ import org.testng.annotations.Test;
 public class Dropdowndemo_Sorting {
 	@Test
 	public void selectvalues() throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\Automation\\Drivers\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.facebook.com/");
 		WebElement daydrop = driver.findElement(By.id("month"));

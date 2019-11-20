@@ -1,7 +1,7 @@
 package com.gmail.testcases;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+//import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 //import com.gmail.pages.Loginpage;

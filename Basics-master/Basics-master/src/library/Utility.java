@@ -1,11 +1,11 @@
 package library;
 
 import java.io.File;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+
+import com.google.common.io.Files;
 
 public class Utility {
 
@@ -14,7 +14,7 @@ public class Utility {
 		try {
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File source = ts.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(source, new File("./Screenshots/" + screeshotname + ".png"));
+			Files.copy(source, new File("./Screenshots/" + screeshotname + ".png"));
 			//FileHandler.copy(source, new File("./Screenshots/" + screeshotname + ".png"));
 			System.out.println("screenshot taken");
 		} catch (Exception e) {

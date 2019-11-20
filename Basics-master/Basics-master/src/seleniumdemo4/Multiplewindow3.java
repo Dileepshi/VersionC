@@ -5,26 +5,28 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Multiplewindow3 {
 	@Test
 	public void win() {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\Automation\\Drivers\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 
 		driver.get("http://demo.guru99.com/popup.php");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//*[contains(@href,'popup.php')]")).click();
 
 		String mainWindow = driver.getWindowHandle();
+		//set does not have the values on the basis of indexes. so we use iterator
 		Set<String> allWindows = driver.getWindowHandles();
-		Iterator<String> window = allWindows.iterator();
+		// iterator points to the top of the object. so next() is used to iterate from the top to last.
+		//controller will move to the next window
+		Iterator<String> windows = allWindows.iterator();
 
-		while (window.hasNext()) {
-			String childWindow = window.next();
+		while (windows.hasNext()) {
+			String childWindow = windows.next();
 			// String ChildWindow=i1.next();
 
 			if (!mainWindow.equalsIgnoreCase(childWindow)) {

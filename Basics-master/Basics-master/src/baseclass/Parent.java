@@ -20,6 +20,7 @@ WebDriver driver;
 		driver.manage().window().maximize();
         driver.get("https://seleniumpractise.blogspot.com/2016/11/handle-bootstrap-model-dialog-in.html");
         Reporter.log("---- Browser Started -----",true);
+        
 	}
 	@AfterTest
 	//@AfterClass //  will run only once for all the @Tests in child
