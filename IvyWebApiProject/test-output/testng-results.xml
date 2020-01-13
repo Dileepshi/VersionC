@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="476" started-at="2020-01-06T13:04:22 IST" finished-at="2020-01-06T13:04:23 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="476" started-at="2020-01-06T13:04:22 IST" finished-at="2020-01-06T13:04:23 IST">
+      <class name="JnJMater_Payloads.Runcase">
+        <test-method status="PASS" signature="testload()[pri:0, instance:JnJMater_Payloads.Runcase@57855c9a]" name="testload" duration-ms="387" started-at="2020-01-06T13:04:22 IST" finished-at="2020-01-06T13:04:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testload -->
+      </class> <!-- JnJMater_Payloads.Runcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
