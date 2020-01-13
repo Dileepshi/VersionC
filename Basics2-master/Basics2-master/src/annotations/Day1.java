@@ -17,7 +17,7 @@ public class Day1 {
 	@BeforeSuite
 	public void logintobrowser() {
 
-		System.out.println("@BeforeSuiteBasics");
+		System.out.println("@BeforeSuite");
 	}
 
 	@BeforeMethod
