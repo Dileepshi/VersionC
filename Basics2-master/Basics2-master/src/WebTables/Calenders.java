@@ -2,7 +2,10 @@ package WebTables;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
 
 public class Calenders {
@@ -11,9 +14,13 @@ public class Calenders {
 
 	@Test
 	public void calender() throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-		driver = new FirefoxDriver();
+		
+		DesiredCapabilities cap= new DesiredCapabilities();
+		cap.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+		
+		System.setProperty("webdriver.chrome.driver",
+				"D:\\Automation\\Drivers\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver(cap);
 		driver.manage().window().maximize();
 		driver.get("https://www.goibibo.com/flights/");
 		driver.findElement(By.xpath(".//input[@class='inputSrch curPointFlt ']")).click();

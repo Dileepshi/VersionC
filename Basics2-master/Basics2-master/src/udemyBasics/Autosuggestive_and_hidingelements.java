@@ -4,16 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 // Enter the letters BENG
 // Verify if Airport option is displayed in the suggestive box
 public class Autosuggestive_and_hidingelements {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-		WebDriver driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\Automation\\Drivers\\chromedriver_win32\\chromedriver79.exe");
+		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://www.ksrtc.in");
 		driver.findElement(By.xpath("//input[@id='fromPlaceName']")).sendKeys("BENG");

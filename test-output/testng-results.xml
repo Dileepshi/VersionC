@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="69781" started-at="2019-09-25T11:17:48Z" finished-at="2019-09-25T11:18:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="69781" started-at="2019-09-25T11:17:48Z" finished-at="2019-09-25T11:18:58Z">
+      <class name="com.ivy.testcases.TC_UserAddingUserManagement">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.ivy.testcases.TC_UserAddingUserManagement@1d2adfbe]" name="setup" is-config="true" duration-ms="12091" started-at="2019-09-25T16:47:48Z" finished-at="2019-09-25T16:48:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginsetup()[pri:0, instance:com.ivy.testcases.TC_UserAddingUserManagement@1d2adfbe]" name="loginsetup" is-config="true" duration-ms="13674" started-at="2019-09-25T16:48:00Z" finished-at="2019-09-25T16:48:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginsetup -->
+        <test-method status="PASS" signature="userMappingCase()[pri:0, instance:com.ivy.testcases.TC_UserAddingUserManagement@1d2adfbe]" name="userMappingCase" duration-ms="43986" started-at="2019-09-25T16:48:14Z" finished-at="2019-09-25T16:48:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userMappingCase -->
+      </class> <!-- com.ivy.testcases.TC_UserAddingUserManagement -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

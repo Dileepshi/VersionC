@@ -29,8 +29,7 @@ public class ExcelDataConfig {
 
 	public int getrowcount(int sheetnumber1) {
 
-		int row = Wb.getSheetAt(sheetnumber1).getLastRowNum();
-		int rowcount = row + 1;
+		int rowcount = Wb.getSheetAt(sheetnumber1).getLastRowNum();
 		return rowcount;
 
 	}

@@ -1,45 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+  <parameter name="URL" value="https://gmail.com"/>
+  <parameter name="username" value="Dileep"/>
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="annotations.Day2">
-        <methods>
-          <include name="loginBus"/>
-          <include name="ClosetheBusapplication"/>
-        </methods>
-      </class> <!-- annotations.Day2 -->
-      <class name="annotations.Day1">
-        <methods>
-          <include name="logout"/>
-          <include name="ClassEnded"/>
-          <include name="Classstarted"/>
-          <include name="logintobrowser"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- annotations.Day1 -->
-      <class name="annotations.Day5">
-        <methods>
-          <include name="out"/>
-          <include name="in"/>
-        </methods>
-      </class> <!-- annotations.Day5 -->
-      <class name="annotations.Day3">
-        <methods>
-          <include name="Closethebrowser"/>
-        </methods>
-      </class> <!-- annotations.Day3 -->
       <class name="annotations.Parameterclass">
         <methods>
-          <include name="par"/>
+          <include name="par" invocation-numbers="0"/>
         </methods>
       </class> <!-- annotations.Parameterclass -->
-      <class name="annotations.Day4">
-        <methods>
-          <include name="out"/>
-          <include name="in"/>
-        </methods>
-      </class> <!-- annotations.Day4 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

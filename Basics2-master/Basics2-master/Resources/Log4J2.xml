@@ -10,7 +10,7 @@
 			<SizeBasedTriggeringPolicy size="500" /> <!-- if the file becomes more than 500 KB, then a file is created by system 
 				as specified in file pattern format -->
 		</RollingFile>
-		<Console name="Console" target="SYSTEM_OUT">
+		<Console name="File" target="SYSTEM_OUT">
 			<PatternLayout pattern="%d{HH:mm:ss.SS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
 	</Appenders>

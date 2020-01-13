@@ -5,17 +5,17 @@ import org.testng.annotations.Test;
 
 public class Day3 {
 	
-	@Test(groups = { "smoketestcases" }) // this groups will execute in alphabetical order
+	@Test(groups = "smoketestcases") // this groups will execute in alphabetical order
 	public void loginCar() {
 
 		System.out.println("Login to the car application");
 	}
-	@Test(groups={"smoketestcases"})
+	@Test(groups = "smoketestcases") 
 	public void BooktheBus() {
 
 		System.out.println("Book the car ");
 	}
-	@Test(groups={"smoketestcases"})
+	@Test(groups = "smoketestcases") 
 	public void ClosetheBusapplication() {
 
 		System.out.println("close the car application");

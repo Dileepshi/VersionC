@@ -15,7 +15,7 @@ public class DownloadFiles {
 
 		System.setProperty("webdriver.gecko.driver",
 				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-
+       //   for chrome we use chromeoptions class
        FirefoxProfile profile = new FirefoxProfile();
        profile.setPreference("browser.helperApps.neverask.savetoDisk", "text/plain"); // set mime types as per the extension of the file we download
        // check this URL for mime types for different formats

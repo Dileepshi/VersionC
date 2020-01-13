@@ -2,7 +2,7 @@ package readExcelData;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,15 +15,14 @@ public class DataDrivenExcel {
 
 	@Test(dataProvider = "passdata")
 	public void loginwordpress(String username, String password) throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\selenium-java-3.141.59\\geckodriver-v0.23.0-win64\\geckodriver.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", "D:\\Automation\\Drivers\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath(".//*[@id='email']")).sendKeys(username);
-		driver.findElement(By.id("pass")).sendKeys(password);
-		driver.findElement(By.xpath(".//input[@id='u_0_2']")).click();
+		driver.findElement(By.xpath(".//*[@id='pass']")).sendKeys(password);
+		//driver.findElement(By.xpath(".//input[@id='u_0_2']")).click();
 		System.out.println(driver.getTitle());
 
 	}
@@ -38,15 +37,14 @@ public class DataDrivenExcel {
 	public Object[][] passdata() {
 
 		ExcelDataConfig excel = new ExcelDataConfig(
-				"C:\\Users\\dileep.ks\\workspace\\Basics2\\TestData\\Datadriventest.xlsx");
+				"D:\\Automation\\Excel\\Data.xlsx");
 		int row = excel.getrowcount(0);
 		int column = excel.getcolumnncount(0);
 		Object[][] data = new Object[row][column];
 
-		for (int i = 0; i < row; i++) {
-			for (int j = 0; i < column; i++) {
-				data[i][j] = excel.getdata(0, i, j);
-				data[i][j] = excel.getdata(0, i, j);
+		for (int i =1; i <= row; i++) {
+			for (int j = 0; j < column; j++) {
+				data[i-1][j] = excel.getdata(0, i, j);
 			}
 		}
 		return data;

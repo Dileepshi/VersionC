@@ -9,17 +9,17 @@ public class Day2 {
 	@BeforeTest
 	public void loginBus() {
 
-		System.out.println("Login to the Bus application");
+		System.out.println("@BeforeTest");
 	}
 @Test
 	public void BooktheBus() {
 
-		System.out.println("Book the Bus ");
+		System.out.println("@Test4");
 	}
 @AfterTest
 	public void ClosetheBusapplication() {
 
-		System.out.println("close the Bus application");
+		System.out.println("@AfterTest");
 	}
 
 }
