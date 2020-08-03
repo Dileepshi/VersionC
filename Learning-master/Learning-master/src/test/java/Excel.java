@@ -62,6 +62,7 @@ public class Excel {
 																// list
 							} else {
 								a.add(NumberToTextConverter.toText(cc.getNumericCellValue()));
+								//a.add(String.valueOf(cc.getNumericCellValue()));
 
 							}
 						}

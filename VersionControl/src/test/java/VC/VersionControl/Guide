@@ -1,0 +1,55 @@
+Version Control System are systems that track changes made
+If you want to keep track of all your documents over time, you can do it with VCS.
+Git is the most popular Version Control System.
+---------------------------------Features of VCS---------------------------
+1.Maintain independent branches of code for team members to track their respective changes
+2.Ease of comparison of code across different branches  
+3.Merging of code from several branches of multiple team members  
+4.The convenience of tracing changes in code to find the version that introduced a bug 
+5.Annotate changes with the name of author and message in a particular version of the code. This helps to easily identify the intent of the change 
+6.Simple comparison across versions to help resolve conflicts in code during merging
+7.Revert changes made to the code to any state from its history
+----------------------------------------------------------------------
+What is Distributed Version Control Systems
+Distributed VCS introduced significant improvement over the risks posed by Central VCS. In Distributed VCS, every local machine would have the copy of the entire code-base (aka repository) along with its history
+---------------------------------------------------------------------------------
+Git is a Distributed Version Control System
+Git has a remote repository which is stored on a server and a local repository which is stored in the computer of each developer. This means that the code is not just stored on a central server, but the full copy of the code is present in all the developers’ computers as well. Because every node has a local copy, almost all the operations on Git are local (Exceptions being Pull and Push command). Which means that you don’t have to be connected to the remote repository all the time to do your work.
+On the other hand, Version Control Systems like CVS and SVN require you to be connected to the server for every operation. This gives Git a significant speed advantage. As most of the operations are done locally they have very fast. For e.g., if you want to commit a change it can be done right there on your system. Later once you have a few commits to push, you can push your changes to the central server for all the team members to use. Similarly, if you want to see the history of changes made to a project you don’t need a network connection. All the changes can be viewed from your local copy only.
+------------------------------------------------------------------------
+     GIT Commands
+git config --list
+git config user.name
+git config user.email
+--    To have notepad++ as default editor --
+git config --global core.editor "C:\Program Files\Notepad++\notepad++.exe"
+--    to create a folder --
+ mkdir "folder name"
+--    to remove a folder -----
+ rm "folder name"
+Note: mk stands for Make and rm stands for Remove.
+--    to get all file names on the location 
+ls
+-- to create local git repository-- run the below command in the gitbash 
+D:\Automation\localGIT\bitRepository\.git\ 
+-- to clone a remote project to local
+git clone "repository url"
+-- for know the hidden folders--
+ls -a
+-- to create a file in the folder---
+touch filename.txt
+-- to write data in file
+echo "this is my name" > filename.extension
+-- to read data in the file--
+cat filename.extension
+-- to add files to staging area
+git add *
+git add filename
+-- to remove file from staging area
+git rm --cached filename
+-- to come back folders in GIT
+cd ..
+to delete folder in GIT
+git rm -rf foldername
+
+ 
