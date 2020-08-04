@@ -49,7 +49,38 @@ git add filename
 git rm --cached filename
 -- to come back folders in GIT
 cd ..
-to delete folder in GIT
+--to delete folder in GIT
 git rm -rf foldername
+--to rename files
+git mv exisitingfilename newfilename--need to commit changes after renaming
+-- to see logs
+git log
+--to see the difference of commits
+git diff
+-- to show history
+git show
+-- to create a local repository from a remote
+git clone
+-- connect local repository to remote
+-- git remote add name remoterepositoryurl
+--How to check if the Local Repository is connected with Remote Repository?
+git remote
+-- to check the repository name
+git remote -v
+-- to get other repositories to our repository
+by navigating to the other user, repository name and click on the fork button
+-- to download the project from remote repository to local
+git clone repositoryurl
+-- to disconnect local to remote
+git remote remove origin
+-- to push committed files to remte
+git push <remote_repo> <branch_name>
+--will push all the branches and their committed changes to the remote repository.
+git push -all <remote_repo>
+
+
+
+
+
 
  
