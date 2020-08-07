@@ -79,6 +79,23 @@ git remote remove origin
 git push <remote_repo> <branch_name>
 --will push all the branches and their committed changes to the remote repository.
 git push -all <remote_repo>
+-- to view all the branches
+git branch
+-- to switch between branches
+git checkout branchname
+-- to Create and Switch branch with a single Git command
+git checkout -b branchname
+-- to delete a branch
+git branch -d branchname
+-- to view remote branches
+git branch -a
+-- to delete remote branches
+git push origin --delete branchname
+-- to recover branches
+git reflog
+-- to merge branch to master
+git merge branchname -- u shd do this coming to master branch
+
 
 
 
