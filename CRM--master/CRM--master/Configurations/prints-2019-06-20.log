@@ -1,7 +1,0 @@
-15:14:43.484 [main] INFO  com.guru.pageobjects.BaseClass - Password Entered
-15:14:44.642 [main] INFO  com.guru.pageobjects.BaseClass - logged In
-15:14:44.642 [main] INFO  com.guru.pageobjects.BaseClass - Clicked on Login
-15:14:48.194 [main] INFO  com.guru.pageobjects.BaseClass - Browser Invoked
-15:14:48.293 [main] INFO  com.guru.pageobjects.BaseClass - Username Entered
-15:14:48.352 [main] INFO  com.guru.pageobjects.BaseClass - Password Entered
-15:14:49.125 [main] INFO  com.guru.pageobjects.BaseClass - logged In
