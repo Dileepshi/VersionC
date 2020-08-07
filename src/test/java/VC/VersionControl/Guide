@@ -25,6 +25,8 @@ git config user.email
 git config --global core.editor "C:\Program Files\Notepad++\notepad++.exe"
 --    to create a folder --
  mkdir "folder name"
+-- to make folder as local repository
+git init
 --    to remove a folder -----
  rm "folder name"
 Note: mk stands for Make and rm stands for Remove.
