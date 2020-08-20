@@ -83,6 +83,8 @@ git push -all <remote_repo>
 git branch
 -- to switch between branches
 git checkout branchname
+-- to create branch
+git branch branchname
 -- to Create and Switch branch with a single Git command
 git checkout -b branchname
 -- to delete a branch
@@ -95,6 +97,10 @@ git push origin --delete branchname
 git reflog
 -- to merge branch to master
 git merge branchname -- u shd do this coming to master branch
+-- to uninitialize git 
+-- git rm -rf .git
+
+
 
 
 
